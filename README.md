@@ -2,10 +2,10 @@
 This is the implementation of the models and source code for the "SRFeat: Single Image Super-Resolution with Feature Discrimination", ECCV2018.
 
 # File description
-- config.py: inlucde configuration for file paths and hyper parameters for networks
+- config.py: include configuration for file paths and hyper parameters for networks
 - main_gan_init.py: code to pretrain our generator with MSE loss
 - main_gan_train.py: code to train our generator with VGG loss, image GAN loss, feature GAN loss
-- main_gan_eval.py: code to infernce our generator with a trained model.
+- main_gan_eval.py: code to inference our generator with a trained model.
 - models/SRFeat_init.npz: weight model trained by main_gan_init.py 
 - models/SRFeat_full.npz: weight model trained by main_gan_train.py
 
@@ -20,7 +20,7 @@ We uploaded matlab codes for data augmentation described in the paper. In the de
 - Download DIV2K dataset from https://data.vision.ee.ethz.ch/cvl/DIV2K/
 - Run data_augmentation/aug_data_div2k.m and data_augmentation/aug_data_div2k_half.m to augment the dataset. 
 - Set valid paths for the augmented dataset and validation set in config.py 
-- Download vgg 19 model in [here](https://drive.google.com/open?id=1c_HRDUmbSORB51VMhR1tdPEKPdjwaDp6)
+- Download vgg 19 model [here](https://drive.google.com/open?id=1c_HRDUmbSORB51VMhR1tdPEKPdjwaDp6)
 - Run main_gan_init.py (takes a few days)
 - Run main_gan_train.py
 
